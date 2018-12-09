@@ -24,6 +24,8 @@ public class PaymentController {
     public BaseResponse pay(@RequestParam(value = "key") String key, @RequestBody PaymentRequest request) {
         System.out.println("pay method called from payment controller");
        System.out.println("for git testing");
+       
+       System.out.println("for git testing for commit testing ");
         BaseResponse response = new BaseResponse();
         if(sharedKey.equalsIgnoreCase(key))
         {
