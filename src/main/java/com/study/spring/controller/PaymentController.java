@@ -23,6 +23,7 @@ public class PaymentController {
     @RequestMapping(value = "/pay", method = RequestMethod.POST)
     public BaseResponse pay(@RequestParam(value = "key") String key, @RequestBody PaymentRequest request) {
         System.out.println("pay method called from payment controller");
+       System.out.println("for git testing");
         BaseResponse response = new BaseResponse();
         if(sharedKey.equalsIgnoreCase(key))
         {
